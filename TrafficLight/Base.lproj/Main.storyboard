@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGZ-si-XBe">
-                                <rect key="frame" x="121" y="753" width="151" height="45"/>
+                                <rect key="frame" x="84.5" y="483" width="151" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.63535565999999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="MWn-ET-5aX"/>
@@ -32,41 +32,41 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ict-vl-se2">
-                                <rect key="frame" x="146.66666666666666" y="79" width="100" height="100"/>
+                                <rect key="frame" x="117.5" y="60" width="85" height="85"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="4Rl-Fe-WvE"/>
-                                    <constraint firstAttribute="height" constant="100" id="Jx0-mb-5tF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-3E-aLv">
-                                <rect key="frame" x="146.66666666666666" y="218.66666666666663" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1g3-or-nM0"/>
-                                    <constraint firstAttribute="width" constant="100" id="xHn-4T-k1U"/>
+                                    <constraint firstAttribute="width" secondItem="ict-vl-se2" secondAttribute="height" multiplier="1:1" id="paR-Hc-Ee2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-Ud-JmB">
-                                <rect key="frame" x="146.66666666666666" y="358.33333333333331" width="100" height="100"/>
+                                <rect key="frame" x="117.5" y="310.5" width="85" height="85"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Sql-NI-rCd"/>
-                                    <constraint firstAttribute="height" constant="100" id="XXz-8W-9Vx"/>
+                                    <constraint firstAttribute="width" secondItem="6xc-Ud-JmB" secondAttribute="height" multiplier="1:1" id="GOE-XM-X8E"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-3E-aLv">
+                                <rect key="frame" x="117.5" y="185" width="85" height="85.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V6o-3E-aLv" secondAttribute="height" multiplier="1:1" id="XdO-zM-1U3"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V6o-3E-aLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7bd-yv-qnt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jGZ-si-XBe" secondAttribute="bottom" constant="20" id="Wdt-pi-grU"/>
-                            <constraint firstItem="ict-vl-se2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yql-HM-cEl"/>
-                            <constraint firstItem="jGZ-si-XBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfw-XD-3zT"/>
-                            <constraint firstItem="6xc-Ud-JmB" firstAttribute="top" secondItem="V6o-3E-aLv" secondAttribute="bottom" constant="39.666666666666686" id="f6I-Mq-bq7"/>
-                            <constraint firstItem="V6o-3E-aLv" firstAttribute="top" secondItem="ict-vl-se2" secondAttribute="bottom" constant="39.666666666666657" id="l9D-nt-TPc"/>
-                            <constraint firstItem="6xc-Ud-JmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nbd-QB-AUg"/>
-                            <constraint firstItem="ict-vl-se2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sp8-Je-N2A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jGZ-si-XBe" secondAttribute="bottom" constant="40" id="G8f-s6-gY2"/>
+                            <constraint firstItem="V6o-3E-aLv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="HxX-ia-WuT"/>
+                            <constraint firstItem="jGZ-si-XBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M3Y-U7-1n6"/>
+                            <constraint firstItem="V6o-3E-aLv" firstAttribute="top" secondItem="ict-vl-se2" secondAttribute="bottom" constant="40" id="MPQ-Gu-NBy"/>
+                            <constraint firstItem="ict-vl-se2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="QeP-Ag-3nb"/>
+                            <constraint firstItem="6xc-Ud-JmB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="YLv-0h-p0X"/>
+                            <constraint firstItem="V6o-3E-aLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gDN-on-A9x"/>
+                            <constraint firstItem="6xc-Ud-JmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pGD-RI-Dj3"/>
+                            <constraint firstItem="ict-vl-se2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pW6-Td-OB1"/>
+                            <constraint firstItem="ict-vl-se2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="ssb-RG-0RC"/>
+                            <constraint firstItem="6xc-Ud-JmB" firstAttribute="top" secondItem="V6o-3E-aLv" secondAttribute="bottom" constant="40" id="zp3-iU-gM6"/>
                         </constraints>
                     </view>
                     <connections>

@@ -7,29 +7,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet var lightViewRed: UIView!
     @IBOutlet var lightViewOrange: UIView!
     @IBOutlet var lightViewGreen: UIView!
+    
     @IBOutlet var startButton: UIButton!
+    
     private var currentLight: CurrentLight = .red
     private let lightOn = 1.0
     private let lightOff = 0.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lightViewRed.layer.cornerRadius = 50
+        
         lightViewRed.alpha = lightOff
-        lightViewOrange.layer.cornerRadius = 50
         lightViewOrange.alpha = lightOff
-        lightViewGreen.layer.cornerRadius = 50
         lightViewGreen.alpha = lightOff
+        
+        startButton.layer.cornerRadius = 10
         
 
     }
+    
+    override func viewWillLayoutSubviews() {
+        lightViewRed.layer.cornerRadius = lightViewRed.frame.height / 2
+        lightViewOrange.layer.cornerRadius = lightViewOrange.frame.height / 2
+        lightViewGreen.layer.cornerRadius = lightViewGreen.frame.height / 2
+    }
 
     @IBAction func startButtonDidTapped(_ sender: UIButton) {
+        
         switch currentLight{
         case .red:
             lightViewGreen.alpha = lightOff
